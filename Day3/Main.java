@@ -3,16 +3,15 @@ package Day3;
 public class Main {
     public static void main(String[] args) {
 
-        Masukan nilai = new Masukan("Kattria Nanda");
-        System.out.println("Username: "+ nilai.username);
+        Variable pertama = new Variable();
+        pertama.cetakBiodata();
 
-        Aritmatika perTama = new Aritmatika(); //memanggil class aritmatika
-        perTama.aritmatika();
+        Aritmatika.aritmatika();
 
-        LayarSegitiga keDua = new LayarSegitiga();//memanggil class Layar Segitiga
+        LayarSegitiga keDua = new LayarSegitiga();//memanggil class Layar Segitiga dengan membuat objek baru
         keDua.segitiga();
 
-        GanjilGenap keTiga = new GanjilGenap();//memanggil class GanjilGenap
+        GanjilGenap keTiga = new GanjilGenap();//memanggil class GanjilGenap dengan membuat objek baru
         keTiga.genapGanjil();
     }
 }
